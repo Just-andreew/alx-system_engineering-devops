@@ -1,0 +1,7 @@
+#!/bin/bash
+# Find and kill the 4-to_infinity_and_beyond process
+# Display a message indicating that the process has been terminated
+
+pkill -f "4-to_infinity_and_beyond"
+
+echo "Process '4-to_infinity_and_beyond' has been terminated."

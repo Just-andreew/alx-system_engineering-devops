@@ -1,0 +1,4 @@
+#!/bin/bash
+# Get and display the script's PID
+echo "My PID is: $$"
+
