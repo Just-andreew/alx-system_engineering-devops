@@ -1,8 +1,6 @@
 #!/bin/bash
-
 # Counter to keep track of the number of times "Best School" is displayed
 count=0
-
 # Use a while loop to display "Best School" 10 times
 while [ $count -lt 10 ]; do
     echo "Best School"
