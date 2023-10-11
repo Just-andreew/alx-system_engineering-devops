@@ -8,4 +8,4 @@ sed -i 's/facebook.com/8.8.8.8/g' /etc/hosts
 echo "IP addresses modified. You can test the changes using 'ping'."
 
 # revert the changes by restoring the backup file:
-cp /etc/hosts.bak /etc/hosts
+#cp /etc/hosts.bak /etc/hosts
