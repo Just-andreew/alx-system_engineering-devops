@@ -3,8 +3,10 @@
 # We aim to resolve facebook.com to 8.8.8.8
 
 cp /etc/hosts /etc/hosts.bak
-sed -i 's/localhost/127.0.0.2/g' /etc/hosts
-sed -i 's/facebook.com/8.8.8.8/g' /etc/hosts
+cp /etc/hosts ~/hosts.new
+sed -i 's/localhost/127.0.0.2/g' ~/hosts.new
+sed -i 's/facebook.com/8.8.8.8/g' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
 echo "IP addresses modified. You can test the changes using 'ping'."
 
 # revert the changes by restoring the backup file:
