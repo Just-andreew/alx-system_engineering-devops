@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# we aim to resolve localhost to 127.0.0.2
+# We aim to resolve facebook.com to 8.8.8.8
+
+cp /etc/hosts /etc/hosts.bak
+sed -i 's/localhost/127.0.0.2/g' /etc/hosts
+sed -i 's/facebook.com/8.8.8.8/g' /etc/hosts
+echo "IP addresses modified. You can test the changes using 'ping'."
+
+# revert the changes by restoring the backup file:
+cp /etc/hosts.bak /etc/hosts
