@@ -1,7 +1,7 @@
 # Ensure SSH client configuration uses the private key ~/.ssh/school
 file_line { 'Declare identity file':
   path   => '/user/abbot/.ssh/config',
-  line   => 'IdentityFile .ssh/school',
+  line   => 'IdentityFile school',
   ensure => present,
 }
 
