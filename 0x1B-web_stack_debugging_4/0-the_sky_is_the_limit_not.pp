@@ -1,4 +1,4 @@
-# Fixes typo in wordpress, resolves 500 Apache error
+# Fixes typo in wordpress, resolves a 500 Apache error
 
 exec { 'fix-typo':
   command => "sed -i 's/phpp/php/' /var/www/html/wp-settings.php",
